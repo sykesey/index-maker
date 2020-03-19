@@ -48,4 +48,4 @@ for (var i = 0; i < lines.length; i++)
 let keywordsSorted = Object.keys(keywords).sort(function(a,b){return keywords[b]-keywords[a]})
 
 //sort here?
-keywordsSorted.forEach( i => console.log( i + " " + keywords[i] ) );
+keywordsSorted.forEach( i => process.stdout.write( i + " " + keywords[i] + "\n" ) );
